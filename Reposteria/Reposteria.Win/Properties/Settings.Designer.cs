@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Prueba.Properties
+namespace Reposteria.Win.Properties
 {
 
 
