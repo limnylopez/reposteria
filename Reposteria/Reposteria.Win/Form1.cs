@@ -19,7 +19,7 @@ namespace Reposteria.Win
             var productosBL = new ProductosBL();
             var listadeProductos = productosBL.ObtenerProductos();
 
-            listadeProductosBindingSource.DataSource = listadeProductos;
+            listadeProdcutosBindingSource.DataSource = listadeProductos;
         }
     }
 }
