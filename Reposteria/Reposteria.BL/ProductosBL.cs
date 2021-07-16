@@ -21,8 +21,6 @@ namespace Reposteria.BL
         {
             ListadeProductos = _contexto.Productos
                 .Include("Categoria")
-                .OrderBy(r => r.Categoria.Descripcion)
-                .ThenBy(r => r.Descripcion)
                 .ToList();
 
             return ListadeProductos;
@@ -48,9 +46,8 @@ namespace Reposteria.BL
 
         public Producto ObtenerProducto(int id)
         {
-            var producto = _contexto.Productos
-                .Include("Categoria").FirstOrDefault(p => p.Id == id);
-
+            var producto = _contexto.Productos.Find(id);
+            
             return producto;
         }
 

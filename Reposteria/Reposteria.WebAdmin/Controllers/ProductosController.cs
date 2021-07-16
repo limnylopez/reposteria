@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-//Limny J
+
 namespace Reposteria.WebAdmin.Controllers
 {
     public class ProductosController : Controller
@@ -31,7 +31,7 @@ namespace Reposteria.WebAdmin.Controllers
             var nuevoProducto = new Producto();
             var categorias = _categoriasBL.ObtenerCategorias();
 
-            ViewBag.ListaCategorias = new SelectList(categorias, "Id", "Descripcion");
+            ViewBag.CategoriasId = new SelectList(categorias, "Id", "Descripcion");
 
             return View(nuevoProducto);
         }
