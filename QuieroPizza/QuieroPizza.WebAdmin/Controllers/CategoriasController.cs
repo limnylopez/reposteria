@@ -7,6 +7,7 @@ using System.Web.Mvc;
 
 namespace QuieroPizza.WebAdmin.Controllers
 {
+    [Authorize] //autoriza toda la categoriacontroller
     public class CategoriasController : Controller
     {
         CategoriasBL _categoriasBL; //variable global 

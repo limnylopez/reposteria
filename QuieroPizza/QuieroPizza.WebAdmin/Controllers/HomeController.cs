@@ -6,6 +6,7 @@ using System.Web.Mvc;
 
 namespace QuieroPizza.WebAdmin.Controllers
 {
+    [Authorize] //autoriza todo homecontroller
     public class HomeController : Controller
     {
         // GET: Home
